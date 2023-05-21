@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getCases } from "../store/actions/cases";
+import React from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getCases } from "../store/actions/cases";
 
 const Menu = () => {
 
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(getCases())
-  }, [dispatch]);
+  // const dispatch = useDispatch()
+  // useEffect(() => {
+  //   dispatch(getCases())
+  // }, [dispatch]);
 
-  const { data } = useSelector(
-    (state) => state.casesReducers
-  );
-  console.log(data)
+  // const { data } = useSelector(
+  //   (state) => state.casesReducers
+  // );
+  // console.log(data)
 
   return (
     <div className="flex flex-row space-x-6 justify-center my-5">
