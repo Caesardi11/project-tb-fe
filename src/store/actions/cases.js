@@ -17,7 +17,7 @@ export const getCases = (params, history) =>
   async function (dispatch) {
     try {
       const response = await CasesService.getCasesById(id);
-      dispatch({ type: GET_CASES_BY_ID, payload: response });
+      dispatch({ type: GET_CASES_BY_ID, payload: response.data });
       // console.log(response)
       return response
     } catch (error) {
